@@ -19,7 +19,7 @@ After that, you can perform the following steps:
 
 Additionaly it will create a file containing the vocabulary (```vocab.txt```) and the label set (```label_set.txt```) as well as a file with the numbers of instances per PIE type (```num_instances_per_type.json```).
 
-2. The model takes [FastText embeddings](https://fasttext.cc/docs/en/crawl-vectors.html) as input and expects a file with embeddings for all words in the vocab. The embedding file we used barely exceeded  the size limit, so at the moment you have to create it yourself. But we will soon provide a script that does the job.
+2. The model takes [FastText embeddings](https://fasttext.cc/docs/en/crawl-vectors.html) as input and expects a file with embeddings for all words in the vocab. The embedding file we used barely exceeded  the size limit, so at the moment you have to create it yourself. But we will soon provide a script that does the job. The embedding file is expected to be in a directory called ```embeddings``` with the name ```cc_de_embeddings_300.txt```. It should have one embedding per line with the word followed by the embedding, everything separated by a single white-space (as the original embedding files from FastText).
 
 3. Run ```parse_sents``` with ```python parse_sents``` to create to additional files:
 
